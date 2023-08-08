@@ -56,8 +56,8 @@ topology:
         - iptables -A INPUT -i eth1 -j ACCEPT
         - iptables -A INPUT -i eth0 -m state --state ESTABLISHED,RELATED -j ACCEPT
         - iptables -A OUTPUT -j ACCEPT
-        - ip addr add 10.10.10.50/24 dev eth1
-        - ip addr add 2001:10:10:10::50/64 dev eth1
+        - ip addr add 192.0.2.1/24 dev eth1
+        - ip addr add 2001:192:0:2::1/64 dev eth1
   links:
     - endpoints: ['vsrx1:eth1', 'workstation:eth1']
     - endpoints: ['vsrx1:eth2', 'inet:eth1']
