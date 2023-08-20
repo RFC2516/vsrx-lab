@@ -1,4 +1,4 @@
-name: SRX-Security
+name: SRX-WebFiltering
 prefix: ""
 mgmt:
   network: clab-network
